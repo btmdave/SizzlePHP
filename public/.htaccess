@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(index\.php|assets|robots\.txt|favicon\.ico|license.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ ./index.php/$1 [L,QSA] 
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^$ /? [L]  

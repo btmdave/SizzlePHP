@@ -1,0 +1,79 @@
+
+.coreProfiler{
+	width:100%;
+	text-align:center;
+	position:fixed;
+	bottom:0;
+}
+* html .coreProfiler{
+	position:absolute;
+}
+.coreProfiler *{
+	margin:0;
+	padding:0;
+	border:none;
+}
+#coreProfiler{
+    padding: 15px;
+	margin:0 auto;
+	width:85%;
+	min-width:960px;
+	color: #fff;
+	font-size: 12px;
+    background-color: #000000;
+	font-family:"Lucida Grande", Tahoma, Arial, sans-serif;
+	-webkit-border-top-left-radius:15px;
+	-webkit-border-top-right-radius:15px;
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+}
+        
+#coreProfiler .profile{
+	text-align: left;
+    max-height: 350px;
+    overflow: auto;
+}
+#coreProfiler .h3{
+	font-weight: bold;
+	font-size: 18px;
+	padding: 0 0 15px 0;
+	color: #6b9e1e;
+}
+
+#coreProfiler .row {
+
+    border-left: 3px solid #444444;
+    border-right: 3px solid #444444;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+	margin-left: 0;
+    background: #1c1c1c;
+    overflow: hidden;
+    border-top: 1px dotted #434343;
+}
+#coreProfiler .row:last-child{
+	
+    border-bottom: 1px dotted #434343;
+}
+
+#coreProfiler .row.odd {
+    background: #212121;    
+}
+#coreProfiler .left{
+    float: left;    
+}
+#coreProfiler .right{
+    float: right;   
+}
+#coreProfiler .time {
+    color: #fceb5a;
+}
+#coreProfiler .total {
+     width: 100%;
+     text-align: right;
+     padding: 10px;
+     color: #fceb5a;
+     font-weight: bold;
+     border-bottom: 1px dotted #434343;
+}

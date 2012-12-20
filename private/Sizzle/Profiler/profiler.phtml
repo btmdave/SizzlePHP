@@ -1,0 +1,29 @@
+<style><?=$this->css?></style>
+    <div class="coreProfiler">
+        <div id="coreProfiler">
+            <div class="profile">
+                <div class="h3">
+                    <?=count($this->_profile)?> Queries
+                </div>
+            <?php
+                if(!empty($this->_profile)) {
+                    $odd = true;
+                    $total = 0;
+                    foreach($this->_profile as $item => $value) {
+                
+                        echo '
+                            <div class="row '.(($odd = !$odd) ? 'odd' : '').'">
+                            <div class="left">'.$value['sql'].'</div>
+                            <div class="right time">'.$value['time'].'</div>
+                            </div>
+                        ';
+                        $total = $total + $value['time'];
+                    }
+                    
+                    echo '<div class="total right">'.$total.'</div>';
+                }
+            ?>
+            
+            </div>
+        </div>
+    </div>
